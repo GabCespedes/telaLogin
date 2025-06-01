@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+}
+:root{
+    --elasticEscuro: #282b33;
+    --elasticVerdeClaro: #21BFAF;
+    --elasticVerde: #17BFA0;
+    --elasticLaranja: #F26E50;
+    --elasticBranco: #F2F2F2;
+}
+body{
+    background: linear-gradient(
+        to bottom, var(--elasticEscuro), var(--elasticVerde)
+    ) ;
+    height: 100vh;
+}
+#container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+#container h1{
+    color: var(--elasticBranco);
+    margin-bottom: 20px;
+}
+/* css do forms*/ 
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 0.4em;
+  background-color: var(--elasticEscuro);
+  border-radius: 25px;
+  transition: .4s ease-in-out;
+  border: 1px solid var(--elasticLaranja);
+}
+
+.form:hover {
+  transform: scale(1.05);
+  border: 3px solid var(--elasticLaranja);
+}
+
+#heading {
+  text-align: center;
+  margin: 2em;
+  color: var(--elasticBranco);
+  font-size: 1.2em;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: var(--elasticBranco);
+  background-color: #1f2128;
+}
+.field:hover {
+  border: var(--elasticLaranja) 1px solid;
+  fill: var(--elasticLaranja);
+}
+
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: var(--elasticBranco);
+}
+
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: var(--elasticBranco);
+}
+
+.form .btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2.5em;
+}
+
+.button {
+  all: unset;
+  padding: 0.5em;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: #252525;
+  color:var(--elasticBranco);
+}
+
+.button:hover {
+  background-color: var(--elasticLaranja);
+  color: var(--elasticBranco);
+}
+p{
+  color: var(--elasticBranco);
+  text-align: center;
+  font-size: 0.75em;
+}
+.link{
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: var(--elasticBranco);
+  
+}
+.link:hover{
+  color: var(--elasticLaranja);
+  transition: .2s ease-in-out;
+}
