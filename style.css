@@ -75,8 +75,7 @@ body{
   fill: var(--elasticBranco);
 }
 
-
-.input-field {
+#senha, #usuario, #id {
   background: none;
   border: none;
   outline: none;
